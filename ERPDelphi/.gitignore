@@ -1,0 +1,27 @@
+# Arquivos de Histórico e Backup
+**/__history/
+**/__recovery/
+*.~*
+*.bak
+
+# Arquivos Binários e Compilados 
+**/dcus/
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.res
+
+# Configurações Locais do Usuário 
+*.identcache
+*.local
+*.skincfg
+*.dproj.local
+*.groupproj.local
+*.stat
+
+# Arquivos de Debug e Log
+*.log
+*.map
+*.dres
