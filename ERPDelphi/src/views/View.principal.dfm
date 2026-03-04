@@ -2381,7 +2381,7 @@ object ViewPrincipal: TViewPrincipal
     TabOrder = 1
     ExplicitLeft = -3
     ExplicitTop = 73
-    object pnlRodapeSair: TPanel
+    object pnlSair: TPanel
       Left = 0
       Top = 476
       Width = 210
@@ -2394,31 +2394,166 @@ object ViewPrincipal: TViewPrincipal
       ExplicitLeft = 56
       ExplicitTop = 480
       ExplicitWidth = 185
-      object lblSair: TLabel
+      object btnSair: TSpeedButton
         AlignWithMargins = True
-        Left = 5
-        Top = 5
-        Width = 65
-        Height = 36
-        Margins.Left = 5
-        Margins.Top = 5
-        Margins.Right = 0
-        Margins.Bottom = 0
-        Align = alLeft
-        Alignment = taCenter
+        Left = 3
+        Top = 3
+        Width = 204
+        Height = 35
+        Cursor = crHandPoint
+        Align = alClient
         Caption = '[ SAIR ]'
-        Color = clBlack
-        Font.Charset = ANSI_CHARSET
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
-        Font.Height = -21
-        Font.Name = 'Segoe UI Semilight'
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
         Font.Style = []
-        ParentColor = False
+        Margin = 5
         ParentFont = False
-        OnClick = lblSairClick
+        OnClick = btnSairClick
+        ExplicitTop = -9
+        ExplicitHeight = 50
+      end
+    end
+    object pnlShapeMenu: TPanel
+      Left = 0
+      Top = 0
+      Width = 4
+      Height = 476
+      Align = alLeft
+      BevelOuter = bvNone
+      Color = 5658198
+      ParentBackground = False
+      TabOrder = 1
+      object ShapeMenu: TShape
+        Left = 0
+        Top = 0
+        Width = 4
+        Height = 50
+      end
+    end
+    object pnlDadosMenu: TPanel
+      Left = 4
+      Top = 0
+      Width = 206
+      Height = 476
+      Align = alClient
+      BevelOuter = bvNone
+      Color = 5658198
+      ParentBackground = False
+      TabOrder = 2
+      ExplicitLeft = 1
+      ExplicitTop = 3
+      object btnClientes: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 25
+        Width = 200
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 25
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CLIENTES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
         ExplicitLeft = 0
-        ExplicitTop = 9
-        ExplicitHeight = 30
+        ExplicitTop = 24
+      end
+      object btnCaixa: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 75
+        Width = 200
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CAIXA ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 6
+        ExplicitTop = -12
+      end
+      object btnFornecedores: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 125
+        Width = 200
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ FORNECEDORES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = 3
+        ExplicitWidth = 206
+      end
+      object btnProdutos: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 175
+        Width = 200
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ PRODUTOS ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 6
+      end
+      object btnConfiguracoes: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 325
+        Width = 200
+        Height = 50
+        Cursor = crHandPoint
+        Margins.Top = 100
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CONFIG ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 395
       end
     end
   end

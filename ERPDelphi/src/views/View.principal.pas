@@ -11,7 +11,7 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.Outline;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.Outline, Vcl.Buttons;
 
 type
   TViewPrincipal = class(TForm)
@@ -39,10 +39,18 @@ type
     pnlConteudoLicenca: TPanel;
     lblLicenciado: TLabel;
     lblTitLicenciado: TLabel;
-    pnlRodapeSair: TPanel;
-    lblSair: TLabel;
+    pnlSair: TPanel;
+    pnlShapeMenu: TPanel;
+    ShapeMenu: TShape;
+    pnlDadosMenu: TPanel;
+    btnClientes: TSpeedButton;
+    btnCaixa: TSpeedButton;
+    btnFornecedores: TSpeedButton;
+    btnProdutos: TSpeedButton;
+    btnConfiguracoes: TSpeedButton;
+    btnSair: TSpeedButton;
     procedure btnFecharClick(Sender: TObject);
-    procedure lblSairClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,9 +69,9 @@ begin
     Application.Terminate;
 end;
 
-procedure TViewPrincipal.lblSairClick(Sender: TObject);
+procedure TViewPrincipal.btnSairClick(Sender: TObject);
 begin
-  Application.Terminate;
+Application.Terminate;
 end;
 
 end.
