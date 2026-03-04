@@ -17,6 +17,18 @@ type
   TViewPrincipal = class(TForm)
     pnlTopo: TPanel;
     btnFechar: TButton;
+    pnlMenu: TPanel;
+    pnlBackPrincipal: TPanel;
+    pnlRodape: TPanel;
+    pnlConteudo: TPanel;
+    pnlLogo: TPanel;
+    pnlLineLogo: TPanel;
+    pnlConteudoLogo: TPanel;
+    lblTituloEmpresa: TLabel;
+    lblDescricaoEmpresa: TLabel;
+    pnlVersao: TPanel;
+    lblVersaoTitulo: TLabel;
+    lblVersao: TLabel;
     procedure btnFecharClick(Sender: TObject);
   private
     { Private declarations }
