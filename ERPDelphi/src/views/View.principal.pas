@@ -11,15 +11,14 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.Outline, Vcl.Buttons;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.Outline, Vcl.Buttons,
+  Vcl.Imaging.pngimage, System.ImageList, Vcl.ImgList, System.Actions,
+  Vcl.ActnList;
 
 type
   TViewPrincipal = class(TForm)
     pnlTopo: TPanel;
     pnlMenu: TPanel;
-    pnlBackPrincipal: TPanel;
-    pnlRodape: TPanel;
-    pnlConteudo: TPanel;
     pnlLogo: TPanel;
     pnlLineLogo: TPanel;
     pnlConteudoLogo: TPanel;
@@ -31,14 +30,10 @@ type
     pnlUsuario: TPanel;
     pnlLineUsuario: TPanel;
     pnlImagemUsuario: TPanel;
-    imgUsuario: TImage;
+    imgUserBranca: TImage;
     pnlDadosUsuarios: TPanel;
     lblUsuario: TLabel;
     lblPerfil: TLabel;
-    pnlLicenciado: TPanel;
-    pnlConteudoLicenca: TPanel;
-    lblLicenciado: TLabel;
-    lblTitLicenciado: TLabel;
     pnlSair: TPanel;
     pnlShapeMenu: TPanel;
     ShapeMenu: TShape;
@@ -49,7 +44,16 @@ type
     btnProdutos: TSpeedButton;
     btnConfiguracoes: TSpeedButton;
     btnSair: TSpeedButton;
+    imgUserLaranja: TImage;
+    pnlBackPrincipal: TPanel;
+    pnlRodape: TPanel;
+    pnlLicenciado: TPanel;
+    pnlConteudoLicenca: TPanel;
+    lblLicenciado: TLabel;
+    lblTitLicenciado: TLabel;
     pnlEnfeite: TPanel;
+    pnlConteudo: TPanel;
+    imgBackground: TImage;
     procedure btnFecharClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure btnClientesClick(Sender: TObject);
@@ -58,6 +62,10 @@ type
     procedure btnProdutosClick(Sender: TObject);
     procedure btnConfiguracoesClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure lblTituloEmpresaMouseEnter(Sender: TObject);
+    procedure lblTituloEmpresaMouseLeave(Sender: TObject);
+    procedure imgUserBrancaMouseEnter(Sender: TObject);
+    procedure imgUserLaranjaMouseLeave(Sender: TObject);
   private
      procedure GET_LineMENU(Sender: TObject);
   public
@@ -108,7 +116,7 @@ Application.Terminate;
 end;
 
 procedure TViewPrincipal.FormShow(Sender: TObject);
-begin  //show
+begin  //SHOW
 GET_LineMENU(btnClientes);
 end;
 
@@ -119,6 +127,28 @@ begin
   ShapeMenu.Height := TSpeedButton(Sender).Height;
   ShapeMenu.Top := TSpeedButton(Sender).Top;
   pnlShapeMenu.Repaint;
+end;
+
+procedure TViewPrincipal.imgUserBrancaMouseEnter(Sender: TObject);
+begin
+  imgUserBranca.Visible := False;
+  imgUserLaranja.Visible := True;
+end;
+
+procedure TViewPrincipal.imgUserLaranjaMouseLeave(Sender: TObject);
+begin
+  imgUserBranca.Visible := True;
+  imgUserLaranja.Visible := False;
+end;
+
+procedure TViewPrincipal.lblTituloEmpresaMouseEnter(Sender: TObject);
+begin
+  lblTituloEmpresa.Font.Color := $000FBBD9;
+end;
+
+procedure TViewPrincipal.lblTituloEmpresaMouseLeave(Sender: TObject);
+begin
+  lblTituloEmpresa.Font.Color := clWhite;
 end;
 
 end.
