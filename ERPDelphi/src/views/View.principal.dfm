@@ -4,8 +4,8 @@ object ViewPrincipal: TViewPrincipal
   Align = alClient
   BorderStyle = bsNone
   Caption = 'ViewPrincipal'
-  ClientHeight = 767
-  ClientWidth = 988
+  ClientHeight = 587
+  ClientWidth = 939
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -2132,25 +2132,14 @@ object ViewPrincipal: TViewPrincipal
   object pnlTopo: TPanel
     Left = 0
     Top = 0
-    Width = 988
+    Width = 939
     Height = 70
     Align = alTop
     BevelOuter = bvNone
     Color = 5395026
     ParentBackground = False
     TabOrder = 0
-    object btnFechar: TButton
-      Left = 913
-      Top = 0
-      Width = 75
-      Height = 70
-      Align = alRight
-      Caption = 'Fechar'
-      TabOrder = 0
-      OnClick = btnFecharClick
-      ExplicitLeft = 830
-      ExplicitHeight = 41
-    end
+    ExplicitTop = -6
     object pnlLogo: TPanel
       Left = 0
       Top = 0
@@ -2160,10 +2149,7 @@ object ViewPrincipal: TViewPrincipal
       BevelOuter = bvNone
       Color = 4605510
       ParentBackground = False
-      TabOrder = 1
-      ExplicitLeft = -6
-      ExplicitTop = -6
-      ExplicitHeight = 73
+      TabOrder = 0
       object pnlLineLogo: TPanel
         Left = 0
         Top = 0
@@ -2185,9 +2171,6 @@ object ViewPrincipal: TViewPrincipal
         Color = 4605510
         ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = -6
-        ExplicitTop = 8
-        ExplicitHeight = 71
         object lblTituloEmpresa: TLabel
           AlignWithMargins = True
           Left = 3
@@ -2204,9 +2187,8 @@ object ViewPrincipal: TViewPrincipal
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 0
-          ExplicitTop = -3
-          ExplicitWidth = 210
+          ExplicitWidth = 109
+          ExplicitHeight = 32
         end
         object lblDescricaoEmpresa: TLabel
           AlignWithMargins = True
@@ -2224,7 +2206,6 @@ object ViewPrincipal: TViewPrincipal
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 36
           ExplicitWidth = 83
         end
       end
@@ -2238,9 +2219,7 @@ object ViewPrincipal: TViewPrincipal
       BevelOuter = bvNone
       Color = 5395026
       ParentBackground = False
-      TabOrder = 2
-      ExplicitLeft = 213
-      ExplicitTop = 8
+      TabOrder = 1
       object lblVersaoTitulo: TLabel
         AlignWithMargins = True
         Left = 3
@@ -2258,8 +2237,6 @@ object ViewPrincipal: TViewPrincipal
         Font.Name = 'Segoe UI Semilight'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = 24
-        ExplicitTop = 16
         ExplicitWidth = 75
         ExplicitHeight = 21
       end
@@ -2282,9 +2259,112 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         ParentColor = False
         ParentFont = False
-        ExplicitLeft = 0
-        ExplicitTop = 53
         ExplicitWidth = 35
+      end
+    end
+    object pnlUsuario: TPanel
+      Left = 719
+      Top = 0
+      Width = 220
+      Height = 70
+      Align = alRight
+      BevelOuter = bvNone
+      Color = 5395026
+      ParentBackground = False
+      TabOrder = 2
+      ExplicitLeft = 768
+      ExplicitTop = -6
+      object pnlLineUsuario: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 20
+        Width = 2
+        Height = 30
+        Margins.Left = 0
+        Margins.Top = 20
+        Margins.Right = 0
+        Margins.Bottom = 20
+        Align = alLeft
+        BevelOuter = bvNone
+        Color = clDarkgoldenrod
+        ParentBackground = False
+        TabOrder = 0
+      end
+      object pnlImagemUsuario: TPanel
+        Left = 150
+        Top = 0
+        Width = 70
+        Height = 70
+        Align = alRight
+        BevelOuter = bvNone
+        Color = 5395026
+        ParentBackground = False
+        TabOrder = 1
+        ExplicitLeft = 35
+        object imgUsuario: TImage
+          Left = 0
+          Top = 0
+          Width = 70
+          Height = 70
+          Align = alClient
+          Center = True
+          ExplicitLeft = 24
+          ExplicitTop = 24
+          ExplicitWidth = 105
+          ExplicitHeight = 105
+        end
+      end
+      object pnlDadosUsuarios: TPanel
+        Left = 2
+        Top = 0
+        Width = 148
+        Height = 70
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 5395026
+        ParentBackground = False
+        TabOrder = 2
+        ExplicitLeft = 5
+        object lblUsuario: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 10
+          Width = 142
+          Height = 29
+          Margins.Top = 10
+          Margins.Bottom = 0
+          Align = alClient
+          Alignment = taRightJustify
+          Caption = 'Nome Usu'#225'rio'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 27
+          ExplicitWidth = 118
+          ExplicitHeight = 25
+        end
+        object lblPerfil: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 39
+          Width = 142
+          Height = 21
+          Margins.Top = 0
+          Margins.Bottom = 10
+          Align = alBottom
+          Alignment = taRightJustify
+          Caption = 'Administrador'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWhite
+          Font.Height = -16
+          Font.Name = 'Segoe UI Light'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 0
+        end
       end
     end
   end
@@ -2292,56 +2372,163 @@ object ViewPrincipal: TViewPrincipal
     Left = 0
     Top = 70
     Width = 210
-    Height = 697
+    Height = 517
     Align = alLeft
     BevelOuter = bvNone
     Caption = ' '
     Color = 5395026
     ParentBackground = False
     TabOrder = 1
-    ExplicitLeft = -6
-    ExplicitTop = 79
-    ExplicitHeight = 694
+    ExplicitLeft = -3
+    ExplicitTop = 73
+    object pnlRodapeSair: TPanel
+      Left = 0
+      Top = 476
+      Width = 210
+      Height = 41
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 4605510
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 56
+      ExplicitTop = 480
+      ExplicitWidth = 185
+      object lblSair: TLabel
+        AlignWithMargins = True
+        Left = 5
+        Top = 5
+        Width = 65
+        Height = 36
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Align = alLeft
+        Alignment = taCenter
+        Caption = '[ SAIR ]'
+        Color = clBlack
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clRed
+        Font.Height = -21
+        Font.Name = 'Segoe UI Semilight'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+        OnClick = lblSairClick
+        ExplicitLeft = 0
+        ExplicitTop = 9
+        ExplicitHeight = 30
+      end
+    end
   end
   object pnlBackPrincipal: TPanel
     Left = 210
     Top = 70
-    Width = 778
-    Height = 697
+    Width = 729
+    Height = 517
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 255
-    ExplicitTop = 73
-    ExplicitWidth = 739
-    ExplicitHeight = 694
+    ExplicitWidth = 778
+    ExplicitHeight = 697
     object pnlRodape: TPanel
       Left = 0
-      Top = 643
-      Width = 778
-      Height = 54
+      Top = 476
+      Width = 729
+      Height = 41
       Align = alBottom
       BevelOuter = bvNone
       Color = 5395026
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 6
-      ExplicitTop = 646
-      ExplicitWidth = 739
+      object pnlLicenciado: TPanel
+        AlignWithMargins = True
+        Left = 419
+        Top = 0
+        Width = 300
+        Height = 41
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 10
+        Margins.Bottom = 0
+        Align = alRight
+        BevelOuter = bvNone
+        Color = 5395026
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitLeft = 552
+        ExplicitHeight = 54
+        object pnlConteudoLicenca: TPanel
+          Left = 0
+          Top = 0
+          Width = 300
+          Height = 41
+          Align = alClient
+          BevelOuter = bvNone
+          Color = 5395026
+          ParentBackground = False
+          TabOrder = 0
+          ExplicitLeft = 144
+          ExplicitTop = 16
+          ExplicitWidth = 185
+          object lblLicenciado: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 15
+            Width = 294
+            Height = 26
+            Margins.Top = 15
+            Margins.Bottom = 0
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = 'EMPRESA DYG LTDA'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -19
+            Font.Name = 'Segoe UI Semilight'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 127
+            ExplicitWidth = 168
+            ExplicitHeight = 25
+          end
+          object lblTitLicenciado: TLabel
+            AlignWithMargins = True
+            Left = 3
+            Top = 0
+            Width = 294
+            Height = 31
+            Margins.Top = 0
+            Margins.Bottom = 10
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = 'Licenciado Para:'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Segoe UI Semilight'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 204
+            ExplicitWidth = 91
+            ExplicitHeight = 17
+          end
+        end
+      end
     end
     object pnlConteudo: TPanel
       Left = 0
       Top = 0
-      Width = 778
-      Height = 643
+      Width = 729
+      Height = 476
       Align = alClient
       BevelOuter = bvNone
       Color = clWhite
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 6
-      ExplicitTop = -6
-      ExplicitHeight = 640
+      ExplicitLeft = 3
+      ExplicitTop = -3
     end
   end
 end

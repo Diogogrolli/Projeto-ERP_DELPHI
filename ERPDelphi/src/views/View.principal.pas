@@ -11,12 +11,11 @@ uses
   Vcl.Graphics,
   Vcl.Controls,
   Vcl.Forms,
-  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.Outline;
 
 type
   TViewPrincipal = class(TForm)
     pnlTopo: TPanel;
-    btnFechar: TButton;
     pnlMenu: TPanel;
     pnlBackPrincipal: TPanel;
     pnlRodape: TPanel;
@@ -29,7 +28,21 @@ type
     pnlVersao: TPanel;
     lblVersaoTitulo: TLabel;
     lblVersao: TLabel;
+    pnlUsuario: TPanel;
+    pnlLineUsuario: TPanel;
+    pnlImagemUsuario: TPanel;
+    imgUsuario: TImage;
+    pnlDadosUsuarios: TPanel;
+    lblUsuario: TLabel;
+    lblPerfil: TLabel;
+    pnlLicenciado: TPanel;
+    pnlConteudoLicenca: TPanel;
+    lblLicenciado: TLabel;
+    lblTitLicenciado: TLabel;
+    pnlRodapeSair: TPanel;
+    lblSair: TLabel;
     procedure btnFecharClick(Sender: TObject);
+    procedure lblSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,6 +59,11 @@ implementation
 procedure TViewPrincipal.btnFecharClick(Sender: TObject);
 begin
     Application.Terminate;
+end;
+
+procedure TViewPrincipal.lblSairClick(Sender: TObject);
+begin
+  Application.Terminate;
 end;
 
 end.
