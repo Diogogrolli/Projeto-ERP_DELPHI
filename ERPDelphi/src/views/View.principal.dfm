@@ -2128,6 +2128,7 @@ object ViewPrincipal: TViewPrincipal
     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   Position = poDesigned
+  OnShow = FormShow
   TextHeight = 15
   object pnlTopo: TPanel
     Left = 0
@@ -2464,6 +2465,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnClientesClick
         ExplicitLeft = 0
         ExplicitTop = 24
       end
@@ -2486,6 +2488,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnCaixaClick
         ExplicitLeft = 6
         ExplicitTop = -12
       end
@@ -2508,6 +2511,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnFornecedoresClick
         ExplicitLeft = -3
         ExplicitTop = 3
         ExplicitWidth = 206
@@ -2531,6 +2535,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnProdutosClick
         ExplicitLeft = 6
       end
       object btnConfiguracoes: TSpeedButton
@@ -2552,6 +2557,7 @@ object ViewPrincipal: TViewPrincipal
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnConfiguracoesClick
         ExplicitLeft = 0
         ExplicitTop = 395
       end
@@ -2604,9 +2610,7 @@ object ViewPrincipal: TViewPrincipal
           Color = 5395026
           ParentBackground = False
           TabOrder = 0
-          ExplicitLeft = 144
-          ExplicitTop = 16
-          ExplicitWidth = 185
+          ExplicitTop = 6
           object lblLicenciado: TLabel
             AlignWithMargins = True
             Left = 3
@@ -2648,6 +2652,21 @@ object ViewPrincipal: TViewPrincipal
             ExplicitLeft = 204
             ExplicitWidth = 91
             ExplicitHeight = 17
+          end
+          object pnlEnfeite: TPanel
+            AlignWithMargins = True
+            Left = 0
+            Top = 1
+            Width = 1
+            Height = 40
+            Margins.Left = 0
+            Margins.Top = 20
+            Margins.Right = 0
+            Margins.Bottom = 20
+            BevelOuter = bvNone
+            Color = clDarkgoldenrod
+            ParentBackground = False
+            TabOrder = 0
           end
         end
       end
